@@ -168,7 +168,43 @@ echo $salida_cuatro;
 
 mysqli_close($con);   
 
+
 ?>
+
+<form class="formularioAñadirUser" action="functions.php.php" method="post">
+                <h2 class="title">Añadir Usuario</h2>
+                <div>
+                    <div class="col-md-6 form-group">
+                        <label for="nombreCurso" class="form-label text-uppercase">Nombre</label>
+                        <input type="text" class="" name="nombre">
+                        <div id="nombreCursoHelp" class="form-text">Ingrese el nombre del cliente</div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="nombreCortoCurso" class="form-label text-uppercase">Nombre Corto del curso</label>
+                        <input type="text" class="form-control" id="nombreCortoCurso" name="nombreCortoCurso" aria-describedby="nombreCortoCurso">
+                        <div id="nombreCortoCursoHelp" class="form-text">Ingrese el Nombre Corto del curso.</div>
+                    </div>
+                </div>
+                <div >
+                  <div class="col-md-12 form-group">
+                    <label for="observacionesCurso" class="text-uppercase">Observaciones</label>
+                    <textarea class="form-control" id="observacionesCurso" name="observacionesCurso" rows="3" placeholder="Ingresa tús observaciones"></textarea>
+                  </div>
+                </div>
+                <div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-success text-uppercase btn-lg btn-block" id="errores">Guardar Curso</button>
+                    </div>
+                </div>
+                
+                <div>
+                  <div class="alert alert-danger btn-block text-center font-weight-bold" role="alert" id="mostrarError">
+                    
+                  </div> 
+                </div>
+</form>
+
+
 
 </body>
 </html>
