@@ -1,0 +1,179 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+a{
+    all: unset;
+}
+
+#back{
+    width: 30%;
+}
+/* Estilos de la tabla */
+.tabla {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla th {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.tabla td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px; /* Ancho ajustado para acomodar ambos formularios */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Contenedor de los formularios */
+.forms-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre formularios */
+    flex-wrap: wrap; /* Permite que los formularios se ajusten en pantallas pequeñas */
+}
+
+/* Formularios */
+.div-forms {
+    width: 48%; /* Cada formulario ocupará el 48% del contenedor */
+}
+
+@media (max-width: 768px) {
+    .div-forms {
+        width: 100%; /* Los formularios ocupan el 100% del ancho en pantallas más pequeñas */
+    }
+}
+
+/* Títulos */
+.title {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Texto con fondo y borde */
+.text {
+    background-color: #e7e7e7;
+    color: #a7a7a7;
+    width: 100%; /* Ajuste responsivo */
+    height: 2.1rem;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 7px;
+    box-sizing: border-box;
+    border: 2px solid #cccccc;
+    margin-bottom: 15px;
+}
+
+/* Grupos de formularios */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
+.form-label {
+    display: block;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+/* Entradas */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Botones */
+.form-button {
+    width: 50%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.form-button:hover {
+    background-color: #45a049;
+}
+
+/* Ajustes adicionales para pantallas pequeñas */
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .tabla th, .tabla td {
+        padding: 8px;
+    }
+
+    .form-input, .form-button, #back {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #back{
+        width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .text {
+        height: auto;
+        padding: 10px;
+    }
+}
